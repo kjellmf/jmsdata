@@ -2,8 +2,9 @@
   "name": "jmsdata",
   "version": "1.0.0",
   "description": "Joint Military Symbology Data",
-  "main": "dist/index",
-  "typings": "dist/index",
+  "main": "dist/src/index",
+  "typings": "dist/src/index.d.ts",
+  "module": "dist/src/index",
   "scripts": {
     "prepublishOnly": "npm run compile",
     "compile": "tsc -p .",
@@ -24,7 +25,7 @@
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",

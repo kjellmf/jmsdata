@@ -1,6 +1,6 @@
-import {Sic} from "../src/";
+import {Sidc} from "../src/";
 
-describe("SIC class", () => {
+describe("Sidc class", () => {
 
     function testSic(sic) {
         expect(sic.version).toBe("10");
@@ -19,15 +19,15 @@ describe("SIC class", () => {
     }
 
     it("has a constructor", () => {
-        expect(new Sic("10031002181211020000")).toBeInstanceOf(Sic)
+        expect(new Sidc("10031002181211020000")).toBeInstanceOf(Sidc)
     });
 
     it("can have an empty constructor", () => {
-        expect(new Sic()).toBeInstanceOf(Sic)
+        expect(new Sidc()).toBeInstanceOf(Sidc)
     });
 
     it("default sic is 10000000000000000000", () => {
-        let sic = new Sic();
+        let sic = new Sidc();
         expect(sic.version).toBe("10");
         expect(sic.context).toBe("0");
         expect(sic.standardIdentity).toBe("0");
@@ -44,18 +44,18 @@ describe("SIC class", () => {
     });
 
     it("initializes from string", () => {
-        let sic = new Sic("10031002181211020101");
+        let sic = new Sidc("10031002181211020101");
         testSic(sic)
     });
 
     it("toString() returns SIC", () => {
         let numberSic = "10031002181211020102";
-        let sic = new Sic(numberSic);
+        let sic = new Sidc(numberSic);
         expect(sic.toString()).toBe(numberSic);
     });
 
     it("can change parts of SIC", () => {
-        let sic = new Sic("10031002181211020102");
+        let sic = new Sidc("10031002181211020102");
         sic.version = "99";
         sic.modifierTwo = "55";
         expect(sic.toString()).toBe("99031002181211020155");

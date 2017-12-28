@@ -14,7 +14,7 @@ export interface SicElements {
     modifierTwo: string;
 }
 
-export class Sic implements SicElements {
+export class Sidc implements SicElements {
     version: string;
     context: string;
     standardIdentity: string;

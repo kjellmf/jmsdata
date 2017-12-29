@@ -1,5 +1,4 @@
-import {m2525c} from "2525c";
-
+import {m2525c} from "../src/2525c";
 
 describe("2525C support", () => {
 
@@ -7,6 +6,5 @@ describe("2525C support", () => {
         let echelons = m2525c.ECHELONS;
         expect(echelons.B).toBe("Squad");
     });
-
 
 });

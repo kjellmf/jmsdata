@@ -2,12 +2,12 @@
   "name": "jmsdata",
   "version": "1.0.0",
   "description": "Joint Military Symbology Data",
-  "main": "dist/src/index",
+  "main": "dist/lib/src/index",
   "typings": "dist/src/index.d.ts",
   "module": "dist/src/index",
   "scripts": {
     "prepublishOnly": "npm run compile",
-    "compile": "tsc -p .",
+    "compile": "tsc -p . && tsc --module commonjs --outDir dist/lib -d false",
     "watch": "tsc -w -p .",
     "clean": "rm -rf dist",
     "test": "jest"

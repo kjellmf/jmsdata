@@ -13,7 +13,7 @@ This repository contains several projects in the `packages/` directory:
 
 - `jmsd-jmsml` - wraps the [Joint Military Symbology Markup Language (JMSML)](https://github.com/Esri/joint-military-symbology-xml) 
 project. 
-- `jsmd-2525c`
+- `jmsd-2525c`
 - ...
 
 ## Licensing and copyright

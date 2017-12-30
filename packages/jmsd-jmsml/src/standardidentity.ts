@@ -1,4 +1,4 @@
-import {Context, StandardIdentity} from "./jmsml";
+import {Context, StandardIdentity} from "./types";
 
 export const contexts = <Context[]>[
     {

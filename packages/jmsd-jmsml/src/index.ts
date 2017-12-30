@@ -1,4 +1,4 @@
-import {Context} from "./jmsml";
+import {Context} from "./types";
 
 export * from "./sidc";
 export * from "./standardidentity";

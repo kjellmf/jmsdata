@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "es2015",
+      "target": "es5",
+      "outDir": "./dist",
+      "moduleResolution": "node",
+      "declaration": true,
+      "baseUrl": "./src"
+    },
+    "include": [
+      "tests/**/*.ts",
+      "./src/**/*"
+    ]
+  }

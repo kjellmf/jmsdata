@@ -1,5 +1,5 @@
 {
-  "name": "jmsdata",
+  "name": "jmsd-2525c",
   "version": "1.0.0",
   "description": "Joint Military Symbology Data",
   "main": "dist/lib/src/index",
@@ -17,7 +17,6 @@
   "devDependencies": {
     "@types/jest": "^21.1.10",
     "jest": "^22.0.4",
-    "lerna": "^2.5.1",
     "ts-jest": "^22.0.0",
     "typescript": "^2.6.2"
   },

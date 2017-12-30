@@ -1,4 +1,4 @@
-import {m2525c} from "../src/2525c";
+import {m2525c} from "../src/";
 
 describe("2525C support", () => {
 

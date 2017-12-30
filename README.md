@@ -1,8 +1,20 @@
-# Joint Military Symbology Data Wrapper
+# Joint Military Symbology Data 
 
-A JavaScript/Typescript wrapper for [MIL-STD-2525](http://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=114934) and [APP-6](https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology).
-Based on the [Joint Military Symbology Markup Language (JMSML)](https://github.com/Esri/joint-military-symbology-xml) 
+**...work in progress...**
+
+A collection of JavaScript/Typescript projects for working with joint military symbology data ([MIL-STD-2525](http://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=114934) and [APP-6](https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology)).
+
+Primarily based on data from the [Joint Military Symbology Markup Language (JMSML)](https://github.com/Esri/joint-military-symbology-xml) 
 project.
+
+## Packages
+
+This repository contains several projects in the `packages/` directory:
+
+- `jmsd-jmsml` - wraps the [Joint Military Symbology Markup Language (JMSML)](https://github.com/Esri/joint-military-symbology-xml) 
+project. 
+- `jsmd-2525c`
+- ...
 
 ## Licensing and copyright
 

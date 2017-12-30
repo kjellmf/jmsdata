@@ -1,49 +1,43 @@
 {
-  "name": "jmsdata",
-  "version": "1.0.0",
-  "description": "Joint Military Symbology Data",
-  "main": "dist/lib/src/index",
-  "typings": "dist/src/index.d.ts",
-  "module": "dist/src/index",
-  "scripts": {
-    "prepublishOnly": "npm run compile",
-    "compile": "tsc -p . && tsc --module commonjs --outDir dist/lib -d false",
-    "watch": "tsc -w -p .",
-    "clean": "rm -rf dist",
-    "test": "jest"
-  },
-  "author": "Kjell Magne Fauske <kjellmf@gmail.com>",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "@types/jest": "^21.1.10",
-    "jest": "^22.0.4",
-    "lerna": "^2.5.1",
-    "ts-jest": "^22.0.0",
-    "typescript": "^2.6.2"
-  },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    "name": "jmsdata",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Joint Military Symbology Data",
+    "scripts": {
+        "test": "jest"
     },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 95,
-        "lines": 95,
-        "statements": 95
-      }
+    "author": "Kjell Magne Fauske <kjellmf@gmail.com>",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@types/jest": "^21.1.10",
+        "jest": "^22.0.4",
+        "lerna": "^2.5.1",
+        "ts-jest": "^22.0.0",
+        "typescript": "^2.6.2"
     },
-    "collectCoverage": true,
-    "mapCoverage": true
-  }
+    "jest": {
+        "transform": {
+            ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ],
+        "coveragePathIgnorePatterns": [
+            "/node_modules/",
+            "/test/"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 90,
+                "functions": 95,
+                "lines": 95,
+                "statements": 95
+            }
+        },
+        "collectCoverage": true,
+        "mapCoverage": true
+    }
 }

@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 """Extract JSON data from jmsml_D_Base.xml"""
+import string
 from collections import OrderedDict, defaultdict
 import os
+import io
+from operator import itemgetter
 from os.path import join, abspath, normpath
 import sys
 import xml.etree.ElementTree as ET
@@ -429,7 +432,7 @@ TYPEMAP = {
     "amplifiers": "Amplifier[]",
 }
 
-BASE_DATA_PROLOG = """/*
+BASE_DATA_PROLOG = u"""/*
 Joint Military Symbology base data
 
 Generated from data provided by the Joint Military Symbology Markup Language project:
@@ -438,8 +441,31 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import * as t from "./types";
+import * as t from "types";
 """
+
+SS_DATA_PROLOG = u"""/*
+Joint Military Symbology base data
+
+Generated from data provided by the Joint Military Symbology Markup Language project:
+https://github.com/Esri/joint-military-symbology-xml
+
+Copyright 2014 Esri
+*/
+
+import {Entity} from "types";
+"""
+
+SS_TEMPLATE = string.Template(u"""
+export const digits = "$digits";
+export const label = "$label";
+export const id = "$id";
+export const dimensionId = "$dimensionId";
+export const geometry = "$geometry";
+
+""")
+
+
 
 if __name__ == '__main__':
     log.info('Looking for JMSML files in %s', abspath(JMSML_PROJECT_PATH))
@@ -454,15 +480,36 @@ if __name__ == '__main__':
     #     symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]
 
     BASE_DATA_FILENAME = join(PROJECT_PATH, 'tmp/base.ts')
+    SYMBOLSET_FOLDER = join(PROJECT_PATH, 'tmp/symbolsets')
 
-    with open(BASE_DATA_FILENAME, 'w') as f:
+    with io.open(BASE_DATA_FILENAME, 'w', newline='\n') as f:
         f.write(BASE_DATA_PROLOG)
         for key, value in jmsml_data.iteritems():
-            typ = TYPEMAP.get(key,"")
+            typ = TYPEMAP.get(key, "")
             if typ:
                 type_str = "<t.%s>" % typ
             else:
-                type_str =""
-            f.write("export const %s = %s%s;\n\n" % (key, type_str, json.dumps(value, indent=2)))
-        # config_json_code = json.dumps(symbolset_folders, indent=2)
-        # f.write("%s" % (json_code, ))
+                type_str = ""
+            f.write(u"export const %s = %s%s;\n\n" % (key, type_str, json.dumps(value, indent=2)))
+
+    index_import_code = ""
+    module_names = []
+    for ss in sorted(symbol_sets, key=itemgetter('digits')):
+        module_names.append(ss["id"])
+
+        fn = join(SYMBOLSET_FOLDER, ss["id"]+".ts")
+        with io.open(fn, 'w', newline='\n') as f:
+            f.write(SS_DATA_PROLOG)
+            f.write(SS_TEMPLATE.substitute(ss))
+            f.write(u"export const entities = <Entity[]>%s;\n" % json.dumps(ss["entities"], indent=4))
+    with io.open(join(SYMBOLSET_FOLDER, 'index.ts'), 'w', newline='\n') as f:
+        f.write(u'import {SymbolSet} from "types";\n')
+        for m_name in module_names:
+            f.write(u'import * as %s from "./%s"\n' % (m_name, m_name))
+        f.write(u"\nexport const symbolSets = <SymbolSet[]>[\n    ")
+
+        f.write(u",\n    ".join(module_names))
+        f.write(u"\n];")
+
+
+

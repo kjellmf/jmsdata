@@ -38,10 +38,10 @@ export interface SymbolSet extends IdentifierAttributeGroup {
     dimensionId: string;
     geometry: GeometryType;
     entities: Entity[];
-    specialEntitySubTypes?: EntitySubType[];
-    sectorOneModifiers: Modifier[];
-    sectorTwoModifiers: Modifier[];
-    graphicFolder: {};
+    // specialEntitySubTypes?: EntitySubType[];
+    // sectorOneModifiers: Modifier[];
+    // sectorTwoModifiers: Modifier[];
+    // graphicFolder: {};
 }
 
 export interface EntityBase extends FramedGraphicIdentifierAttributeGroup {

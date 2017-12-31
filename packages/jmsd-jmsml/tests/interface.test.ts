@@ -1,7 +1,7 @@
 import * as jms from "../src/";
 
 /* Mdule interface experiments*/
-describe("Symbol set independent data", () => {
+describe("Symbolset independent data", () => {
 
     it("retrieve context", () => {
         expect(jms.contexts).toBeDefined();
@@ -21,23 +21,17 @@ describe("Symbol set independent data", () => {
 
     });
 
-    // it("retrieve status", () => {
-    //     expect(jms.statuses).toBeDefined();
-    // });
-    //
-    // it("retrieve status", () => {
-    //     expect(jms.hqtfDummies).toBeDefined();
-    // });
-    //
-    // it("retrieve amplifier", () => {
-    //     expect(jms.amplifiers).toBeDefined();
-    //     expect(jms.amplifiers[0].descriptors).toBeDefined();
-    // });
-    //
-    // it("retrieve amplifier", () => {
-    //     expect(jms.amplifiers).toBeDefined();
-    //     expect(jms.amplifiers[0].descriptors).toBeDefined();
-    // });
+    it("retrieve status", () => {
+        expect(jms.statuses).toBeDefined();
+    });
 
+    it("retrieve HQTFDummies", () => {
+        expect(jms.hqtfDummies).toBeDefined();
+    });
+
+    it("retrieve amplifier", () => {
+        expect(jms.amplifiers).toBeDefined();
+        expect(jms.amplifiers[0].descriptors).toBeDefined();
+    });
 
 });

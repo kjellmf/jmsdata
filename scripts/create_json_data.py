@@ -438,7 +438,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import * as t from "../../packages/jmsd-jmsml/src/types";
+import * as t from "./types";
 """
 
 if __name__ == '__main__':

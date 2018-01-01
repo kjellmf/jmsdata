@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "20";
 export const label = "Land Installation";
@@ -979,3 +979,175 @@ export const entities = <Entity[]>[
         ]
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Biological", 
+        "id": "BIOLOGICAL_1_MOD", 
+        "graphic": "20011.svg", 
+        "category": "CBRN Type"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Chemical", 
+        "id": "CHEMICAL_1_MOD", 
+        "graphic": "20021.svg", 
+        "category": "CBRN Type"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Nuclear", 
+        "id": "NUCLEAR_1_MOD", 
+        "graphic": "20031.svg", 
+        "category": "CBRN Type"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Radiological", 
+        "id": "RADIOLOGICAL_1_MOD", 
+        "graphic": "20041.svg", 
+        "category": "CBRN Type"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Decontamination", 
+        "id": "DECONTAMINATION_MOD", 
+        "graphic": "20051.svg", 
+        "category": "CBRN Type"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Coal", 
+        "id": "COAL_MOD", 
+        "graphic": "20061.svg", 
+        "category": "Electric Power Type"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Geothermal", 
+        "id": "GEOTHERMAL_MOD", 
+        "graphic": "20071.svg", 
+        "category": "Electric Power Type"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Hydroelectric", 
+        "id": "HYDROELECTRIC_MOD", 
+        "graphic": "20081.svg", 
+        "category": "Electric Power Type"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Natural Gas", 
+        "id": "NATURAL_GAS_MOD", 
+        "graphic": "20091.svg", 
+        "category": "Electric Power Type"
+    }, 
+    {
+        "digits": "10", 
+        "label": "Petroleum", 
+        "id": "PETROLEUM_MOD", 
+        "graphic": "20101.svg", 
+        "category": "Electric Power Type"
+    }, 
+    {
+        "digits": "11", 
+        "label": "Civilian", 
+        "id": "CIVILIAN_MOD", 
+        "graphic": "20111.svg", 
+        "category": "Operation"
+    }, 
+    {
+        "digits": "12", 
+        "label": "Civilian Telephone", 
+        "id": "CIVILIAN_TELEPHONE_MOD", 
+        "graphic": "20121.svg", 
+        "category": "Civilian Telecommunications Type"
+    }, 
+    {
+        "digits": "13", 
+        "label": "Civilian Television", 
+        "id": "CIVILIAN_TELEVISION_MOD", 
+        "graphic": "20131.svg", 
+        "category": "Civilian Telecommunications Type"
+    }
+];
+
+export const sectorTwoModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_2_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Biological", 
+        "id": "BIOLOGICAL_2_MOD", 
+        "graphic": "20012.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Chemical", 
+        "id": "CHEMICAL_2_MOD", 
+        "graphic": "20022.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Nuclear", 
+        "id": "NUCLEAR_2_MOD", 
+        "graphic": "20032.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Radiological", 
+        "id": "RADIOLOGICAL_2_MOD", 
+        "graphic": "20042.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Atomic Energy Reactor", 
+        "id": "ATOMIC_ENERGY_REACTOR_MOD", 
+        "graphic": "20052.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Nuclear Material Production", 
+        "id": "NUCLEAR_MATERIAL_PRODUCTION_MOD", 
+        "graphic": "20062.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Nuclear Material Storage", 
+        "id": "NUCLEAR_MATERIAL_STORAGE_MOD", 
+        "graphic": "20072.svg", 
+        "category": "No Category Listed"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Weapons Grade", 
+        "id": "WEAPONS_GRADE_MOD", 
+        "graphic": "20082.svg", 
+        "category": "No Category Listed"
+    }
+];
+
+export const graphicFolder = {
+    "entities": "Appendices/Land", 
+    "modifierTwos": "Appendices/Land/mod2", 
+    "modifierOnes": "Appendices/Land/mod1"
+};
+

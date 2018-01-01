@@ -453,7 +453,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 """
 
 SS_TEMPLATE = string.Template(u"""
@@ -476,12 +476,12 @@ if __name__ == '__main__':
     symbol_sets = jmsml_data["symbolSets"]
     del jmsml_data["symbolSets"]
 
-    # for symbol_set in jmsml_data["symbolSets"]:
-    #     symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]
+    for symbol_set in symbol_sets:
+        symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]
 
     BASE_DATA_FILENAME = join(PROJECT_PATH, 'tmp/base.ts')
     SYMBOLSET_FOLDER = join(PROJECT_PATH, 'tmp/symbolsets')
-
+    # base.ts
     with io.open(BASE_DATA_FILENAME, 'w', newline='\n') as f:
         f.write(BASE_DATA_PROLOG)
         for key, value in jmsml_data.iteritems():
@@ -494,14 +494,24 @@ if __name__ == '__main__':
 
     index_import_code = ""
     module_names = []
+    # SS_XX.ts
     for ss in sorted(symbol_sets, key=itemgetter('digits')):
         module_names.append(ss["id"])
-
         fn = join(SYMBOLSET_FOLDER, ss["id"]+".ts")
         with io.open(fn, 'w', newline='\n') as f:
             f.write(SS_DATA_PROLOG)
             f.write(SS_TEMPLATE.substitute(ss))
-            f.write(u"export const entities = <Entity[]>%s;\n" % json.dumps(ss["entities"], indent=4))
+            f.write(u"export const entities = <Entity[]>%s;\n\n" % json.dumps(ss["entities"], indent=4))
+            if "specialEntitySubTypes" in ss:
+                code = json.dumps(ss["specialEntitySubTypes"], indent=4)
+            else:
+                code = "[]"
+            f.write(u"export const specialEntitySubTypes = <EntitySubType[]>%s;\n\n" % code)
+            f.write(u"export const sectorOneModifiers = <Modifier[]>%s;\n\n" % json.dumps(ss["sectorOneModifiers"], indent=4))
+            f.write(u"export const sectorTwoModifiers = <Modifier[]>%s;\n\n" % json.dumps(ss["sectorTwoModifiers"], indent=4))
+            f.write(u"export const graphicFolder = %s;\n\n" % json.dumps(ss["graphicFolder"], indent=4))
+
+    # index.ts
     with io.open(join(SYMBOLSET_FOLDER, 'index.ts'), 'w', newline='\n') as f:
         f.write(u'import {SymbolSet} from "types";\n')
         for m_name in module_names:

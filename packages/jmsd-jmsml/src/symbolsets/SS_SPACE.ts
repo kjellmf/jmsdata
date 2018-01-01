@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "05";
 export const label = "Space";
@@ -268,3 +268,190 @@ export const entities = <Entity[]>[
         "entityTypes": []
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Low Earth Orbit (LEO)", 
+        "id": "LEO_MOD", 
+        "graphic": "05011.svg", 
+        "category": "Orbit"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Medium Earth Orbit (MEO)", 
+        "id": "MEO_MOD", 
+        "graphic": "05021.svg", 
+        "category": "Orbit"
+    }, 
+    {
+        "digits": "03", 
+        "label": "High Earth Orbit (HEO)", 
+        "id": "HEO_MOD", 
+        "graphic": "05031.svg", 
+        "category": "Orbit"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Geosynchronous Orbit (GSO)", 
+        "id": "GSO_MOD", 
+        "graphic": "05041.svg", 
+        "category": "Orbit"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Geostationary Orbit (GO)", 
+        "id": "GO_MOD", 
+        "graphic": "05051.svg", 
+        "category": "Orbit"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Molniya Orbit (MO)", 
+        "id": "MO_MOD", 
+        "graphic": "05061.svg", 
+        "category": "Orbit"
+    }
+];
+
+export const sectorTwoModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_2_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Optical", 
+        "id": "OPTICAL_MOD", 
+        "graphic": "05012.svg", 
+        "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+        ], 
+        "category": "Sensor"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Infrared", 
+        "id": "INFRARED_MOD", 
+        "graphic": "05022.svg", 
+        "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+        ], 
+        "category": "Sensor"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Radar", 
+        "id": "RADAR_MOD", 
+        "graphic": "05032.svg", 
+        "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+        ], 
+        "category": "Sensor"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Signals Intelligence (SIGINT)", 
+        "id": "SIGINT_MOD", 
+        "graphic": "05042.svg", 
+        "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+        ], 
+        "category": "Sensor"
+    }
+];
+
+export const graphicFolder = {
+    "entities": "Appendices/Space", 
+    "modifierTwos": "Appendices/Space/mod2", 
+    "modifierOnes": "Appendices/Space/mod1"
+};
+

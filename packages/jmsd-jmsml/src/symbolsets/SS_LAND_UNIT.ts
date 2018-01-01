@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "10";
 export const label = "Land Units";
@@ -1673,3 +1673,1014 @@ export const entities = <Entity[]>[
         ]
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[
+    {
+        "digits": "95", 
+        "label": "Headquarters Element", 
+        "id": "HQ_ELEMENT", 
+        "cloverGraphic": "10xxxx95_0.svg", 
+        "diamondGraphic": "10xxxx95_3.svg", 
+        "rectangleGraphic": "10xxxx95_1.svg", 
+        "squareGraphic": "10xxxx95_2.svg", 
+        "icon": "SPECIAL"
+    }, 
+    {
+        "digits": "96", 
+        "label": "Division and Below Support", 
+        "id": "DIVISION_AND_BELOW_SUPPORT", 
+        "cloverGraphic": "10xxxx96_0.svg", 
+        "diamondGraphic": "10xxxx96_3.svg", 
+        "rectangleGraphic": "10xxxx96_1.svg", 
+        "squareGraphic": "10xxxx96_2.svg", 
+        "icon": "SPECIAL"
+    }, 
+    {
+        "digits": "97", 
+        "label": "Corps Support", 
+        "id": "CORPS_SUPPORT", 
+        "cloverGraphic": "10xxxx97_0.svg", 
+        "diamondGraphic": "10xxxx97_3.svg", 
+        "rectangleGraphic": "10xxxx97_1.svg", 
+        "squareGraphic": "10xxxx97_2.svg", 
+        "icon": "SPECIAL"
+    }, 
+    {
+        "digits": "98", 
+        "label": "Theater/Echelons Above Corps Support", 
+        "id": "ECHELONS_ABOVE_CORPS_SUPPORT", 
+        "cloverGraphic": "10xxxx98_0.svg", 
+        "diamondGraphic": "10xxxx98_3.svg", 
+        "rectangleGraphic": "10xxxx98_1.svg", 
+        "squareGraphic": "10xxxx98_2.svg", 
+        "icon": "SPECIAL"
+    }
+];
+
+export const sectorOneModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Air Mobile/Air Assault (US Only)", 
+        "id": "AIR_MOBILE_AIR_ASSAULT_MOD", 
+        "graphic": "10011.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Area", 
+        "id": "AREA_MOD", 
+        "graphic": "10021.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Attack", 
+        "id": "ATTACK_MOD", 
+        "graphic": "10031.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Biological", 
+        "id": "BIOLOGICAL_MOD", 
+        "graphic": "10041.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Border", 
+        "id": "BORDER_MOD", 
+        "graphic": "10051.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Bridging", 
+        "id": "BRIDGING_MOD", 
+        "graphic": "10061.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Chemical", 
+        "id": "CHEMICAL_MOD", 
+        "graphic": "10071.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Close Protection", 
+        "id": "CLOSE_PROTECTION_MOD", 
+        "graphic": "10081.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Combat", 
+        "id": "COMBAT_MOD", 
+        "graphic": "10091.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "10", 
+        "label": "Command and Control", 
+        "id": "COMMAND_CONTROL_MOD", 
+        "graphic": "10101.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "11", 
+        "label": "Communications Contingency Package", 
+        "id": "COMMUNICATIONS_CONTINGENCY_PACKAGE_MOD", 
+        "graphic": "10111.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "12", 
+        "label": "Construction", 
+        "id": "CONSTRUCTION_MOD", 
+        "graphic": "10121.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "13", 
+        "label": "Cross Cultural Communication", 
+        "id": "CROSS_CULTURAL_COMMUNICATION_MOD", 
+        "graphic": "10131.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "14", 
+        "label": "Crowd and Riot Control", 
+        "id": "CROWD_RIOT_CONTROL_MOD", 
+        "graphic": "10141.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "15", 
+        "label": "Decontamination", 
+        "id": "DECONTAMINATION_MOD", 
+        "graphic": "10151.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "16", 
+        "label": "Detention", 
+        "id": "DETENTION_MOD", 
+        "graphic": "10161.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "17", 
+        "label": "Direct Communications", 
+        "id": "DIRECT_COMMUNICATIONS_MOD", 
+        "graphic": "10171.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "18", 
+        "label": "Diving", 
+        "id": "DIVING_MOD", 
+        "graphic": "10181.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "19", 
+        "label": "Division", 
+        "id": "DIVISION_MOD", 
+        "graphic": "10191.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "20", 
+        "label": "Dog", 
+        "id": "DOG_MOD", 
+        "graphic": "10201.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "21", 
+        "label": "Drilling", 
+        "id": "DRILLING_MOD", 
+        "graphic": "10211.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "22", 
+        "label": "Electro-Optical", 
+        "id": "ELECTRO_OPTICAL_MOD", 
+        "graphic": "10221.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "23", 
+        "label": "Enhanced", 
+        "id": "ENHANCED_MOD", 
+        "graphic": "10231.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "24", 
+        "label": "Explosive Ordnance Disposal (EOD)", 
+        "id": "EXPLOSIVE_ORDNANCE_DISPOSAL_EOD_MOD", 
+        "graphic": "10241.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "25", 
+        "label": "Fire Direction Center", 
+        "id": "FIRE_DIRECTION_CENTER_MOD", 
+        "graphic": "10251.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "26", 
+        "label": "Force", 
+        "id": "FORCE_MOD", 
+        "graphic": "10261.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "27", 
+        "label": "Forward", 
+        "id": "FORWARD_MOD", 
+        "graphic": "10271.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "28", 
+        "label": "Ground Station Module", 
+        "id": "GROUND_STATION_MODULE_MOD", 
+        "graphic": "10281.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "29", 
+        "label": "Landing Support", 
+        "id": "LANDING_SUPPORT_MOD", 
+        "graphic": "10291.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "30", 
+        "label": "Large Extension Node", 
+        "id": "LARGE_EXTENSION_NODE_MOD", 
+        "graphic": "10301.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "31", 
+        "label": "Maintenance", 
+        "id": "MAINTENANCE_MOD", 
+        "graphic": "10311.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "32", 
+        "label": "Meteorological", 
+        "id": "METEOROLOGICAL_MOD", 
+        "graphic": "10321.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "33", 
+        "label": "Mine Countermeasure", 
+        "id": "MINE_COUNTERMEASURE_MOD", 
+        "graphic": "10331.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "34", 
+        "label": "Missile", 
+        "id": "MISSILE_MOD", 
+        "graphic": "10341.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "35", 
+        "label": "Mobile Advisor and Support", 
+        "id": "MOBILE_ADVISOR_SUPPORT_MOD", 
+        "graphic": "10351.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "36", 
+        "label": "Mobile Subscriber Equipment", 
+        "id": "MOBILE_SUBSCRIBER_EQUIPMENT_MOD", 
+        "graphic": "10361.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "37", 
+        "label": "Mobility Support", 
+        "id": "MOBILITY_SUPPORT_MOD", 
+        "graphic": "10371.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "38", 
+        "label": "Movement Control Center", 
+        "id": "MOVEMENT_CONTROL_CENTER_MOD", 
+        "graphic": "10381.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "39", 
+        "label": "Multinational", 
+        "id": "MULTINATIONAL_MOD", 
+        "graphic": "10391.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "40", 
+        "label": "Multinational Specialized Unit", 
+        "id": "MULTINATIONAL_SPECIALIZED_UNIT_MOD", 
+        "graphic": "10401.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "41", 
+        "label": "Multiple Rocket Launcher", 
+        "id": "MULTIPLE_ROCKET_LAUNCHER_MOD", 
+        "graphic": "10411.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "42", 
+        "label": "NATO Medical Role 1", 
+        "id": "NATO_MEDICAL_ROLE_1_MOD", 
+        "graphic": "10421.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "43", 
+        "label": "NATO Medical Role 2", 
+        "id": "NATO_MEDICAL_ROLE_2_MOD", 
+        "graphic": "10431.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "44", 
+        "label": "NATO Medical Role 3", 
+        "id": "NATO_MEDICAL_ROLE_3_MOD", 
+        "graphic": "10441.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "45", 
+        "label": "NATO Medical Role 4", 
+        "id": "NATO_MEDICAL_ROLE_4_MOD", 
+        "graphic": "10451.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "46", 
+        "label": "Naval", 
+        "id": "NAVAL_MOD", 
+        "graphic": "10461.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "47", 
+        "label": "Node Center", 
+        "id": "NODE_CENTER_MOD", 
+        "graphic": "10471.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "48", 
+        "label": "Nuclear", 
+        "id": "NUCLEAR_MOD", 
+        "graphic": "10481.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "49", 
+        "label": "Operations", 
+        "id": "OPERATIONS_MOD", 
+        "graphic": "10491.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "50", 
+        "label": "Radar", 
+        "id": "RADAR_MOD", 
+        "graphic": "10501.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "51", 
+        "label": "Radio Frequency Identification (RFID) Interrogator / Sensor", 
+        "id": "RFID_INTERROGATOR_SENSOR_MOD", 
+        "graphic": "10511.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "52", 
+        "label": "Radiological", 
+        "id": "RADIOLOGICAL_MOD", 
+        "graphic": "10521.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "53", 
+        "label": "Search and Rescue", 
+        "id": "SEARCH_RESCUE_MOD", 
+        "graphic": "10531.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "54", 
+        "label": "Security", 
+        "id": "SECURITY_MOD", 
+        "graphic": "10541.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "55", 
+        "label": "Sensor", 
+        "id": "SENSOR_MOD", 
+        "graphic": "10551.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "56", 
+        "label": "Sensor Control Module (SCM)", 
+        "id": "SENSOR_CONTROL_MODULE_SCM_MOD", 
+        "graphic": "10561.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "57", 
+        "label": "Signals Intelligence", 
+        "id": "SIGNALS_INTELLIGENCE_MOD", 
+        "graphic": "10571.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "58", 
+        "label": "Single Shelter Switch", 
+        "id": "SINGLE_SHELTER_SWITCH_MOD", 
+        "graphic": "10581.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "59", 
+        "label": "Single Rocket Launcher", 
+        "id": "SINGLE_ROCKET_LAUNCHER_MOD", 
+        "graphic": "10591.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "60", 
+        "label": "Smoke", 
+        "id": "SMOKE_MOD", 
+        "graphic": "10601.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "61", 
+        "label": "Sniper", 
+        "id": "SNIPER_MOD", 
+        "graphic": "10611.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "62", 
+        "label": "Sound Ranging", 
+        "id": "SOUND_RANGING_MOD", 
+        "graphic": "10621.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "63", 
+        "label": "Special Operations Forces (SOF)", 
+        "id": "SPEC_OPS_SOF_MOD", 
+        "graphic": "10631.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "64", 
+        "label": "Special Weapons and Tactics", 
+        "id": "SPECIAL_WEAPONS_TACTICS_MOD", 
+        "graphic": "10641.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "65", 
+        "label": "Survey", 
+        "id": "SURVEY_MOD", 
+        "graphic": "10651.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "66", 
+        "label": "Tactical Exploitation", 
+        "id": "TACTICAL_EXPLOITATION_MOD", 
+        "graphic": "10661.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "67", 
+        "label": "Target Acquisition", 
+        "id": "TARGET_ACQUISITION_MOD", 
+        "graphic": "10671.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "68", 
+        "label": "Topographic", 
+        "id": "TOPOGRAPHIC_MOD", 
+        "graphic": "10681.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "69", 
+        "label": "Utility", 
+        "id": "UTILITY_MOD", 
+        "graphic": "10691.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "70", 
+        "label": "Video Imagery (Combat Camera)", 
+        "id": "VIDEO_IMAGERY_MOD", 
+        "graphic": "10701.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "71", 
+        "label": "Accident", 
+        "id": "ACCIDENT_MOD", 
+        "graphic": "10711.svg", 
+        "category": "Composite Loss"
+    }, 
+    {
+        "digits": "72", 
+        "label": "Other", 
+        "id": "OTHER_MOD", 
+        "graphic": "10721.svg", 
+        "category": "Composite Loss"
+    }, 
+    {
+        "digits": "73", 
+        "label": "Civilian", 
+        "id": "CIVILIAN_MOD", 
+        "graphic": "10731.svg", 
+        "category": "Operation"
+    }, 
+    {
+        "digits": "74", 
+        "label": "Antisubmarine Warfare", 
+        "id": "ANTISUBMARINE_WARFARE_MOD", 
+        "graphic": "10741.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "75", 
+        "label": "Medevac", 
+        "id": "MEDEVAC_MOD", 
+        "graphic": "10751.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "76", 
+        "label": "Ranger", 
+        "id": "RANGER_MOD", 
+        "graphic": "10761.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "77", 
+        "label": "Support", 
+        "id": "SUPPORT_MOD", 
+        "graphic": "10771.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "78", 
+        "label": "Aviation", 
+        "id": "AVIATION_MOD", 
+        "graphic": "10781.svg", 
+        "category": "Capability"
+    }
+];
+
+export const sectorTwoModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_2_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Airborne", 
+        "id": "AIRBORNE_MOD", 
+        "graphic": "10012.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Arctic", 
+        "id": "ARCTIC_MOD", 
+        "graphic": "10022.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Battle Damage Repair", 
+        "id": "BATTLE_DAMAGE_REPAIR_MOD", 
+        "graphic": "10032.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Bicycle Equipped", 
+        "id": "BICYCLE_EQUIPPED_MOD", 
+        "graphic": "10042.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Casualty Staging", 
+        "id": "CASUALTY_STAGING_MOD", 
+        "graphic": "10052.svg", 
+        "category": "Close Range and Support"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Clearing", 
+        "id": "CLEARING_MOD", 
+        "graphic": "10062.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Close Range", 
+        "id": "CLOSE_RANGE_MOD", 
+        "graphic": "10072.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Control", 
+        "id": "CONTROL_MOD", 
+        "graphic": "10082.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Decontamination", 
+        "id": "DECONTAMINATION_2_MOD", 
+        "graphic": "10092.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "10", 
+        "label": "Demolition", 
+        "id": "DEMOLITION_MOD", 
+        "graphic": "10102.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "11", 
+        "label": "Dental", 
+        "id": "DENTAL_MOD", 
+        "graphic": "10112.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "12", 
+        "label": "Digital", 
+        "id": "DIGITAL_MOD", 
+        "graphic": "10122.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "13", 
+        "label": "Enhanced Position Location Reporting System (EPLRS)", 
+        "id": "ENHANCED_POSITION_LOCATION_REPORTING_SYSTEM_EPLRS_MOD", 
+        "graphic": "10132.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "14", 
+        "label": "Equipment", 
+        "id": "EQUIPMENT_MOD", 
+        "graphic": "10142.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "15", 
+        "label": "Heavy", 
+        "id": "HEAVY_MOD", 
+        "graphic": "10152.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "16", 
+        "label": "High Altitude", 
+        "id": "HIGH_ALTITUDE_MOD", 
+        "graphic": "10162.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "17", 
+        "label": "Intermodal", 
+        "id": "INTERMODAL_MOD", 
+        "graphic": "10172.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "18", 
+        "label": "Intensive Care", 
+        "id": "INTENSIVE_CARE_MOD", 
+        "graphic": "10182.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "19", 
+        "label": "Light", 
+        "id": "LIGHT_MOD", 
+        "graphic": "10192.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "20", 
+        "label": "Laboratory", 
+        "id": "LABORATORY_MOD", 
+        "graphic": "10202.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "21", 
+        "label": "Launcher", 
+        "id": "LAUNCHER_MOD", 
+        "graphic": "10212.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "22", 
+        "label": "Long Range", 
+        "id": "LONG_RANGE_MOD", 
+        "graphic": "10222.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "23", 
+        "label": "Low Altitude", 
+        "id": "LOW_ALTITUDE_MOD", 
+        "graphic": "10232.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "24", 
+        "label": "Medium", 
+        "id": "MEDIUM_MOD", 
+        "graphic": "10242.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "25", 
+        "label": "Medium Altitude", 
+        "id": "MEDIUM_ALTITUDE_MOD", 
+        "graphic": "10252.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "26", 
+        "label": "Medium Range", 
+        "id": "MEDIUM_RANGE_MOD", 
+        "graphic": "10262.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "27", 
+        "label": "Mountain", 
+        "id": "MOUNTAIN_MOD", 
+        "graphic": "10272.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "28", 
+        "label": "High to Medium Altitude", 
+        "id": "HIGH_MEDIUM_ALTITUDE_MOD", 
+        "graphic": "10282.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "29", 
+        "label": "Multi-Channel", 
+        "id": "MULTI_CHANNEL_MOD", 
+        "graphic": "10292.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "30", 
+        "label": "Optical (Flash)", 
+        "id": "OPTICAL_FLASH_MOD", 
+        "graphic": "10302.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "31", 
+        "label": "Pack Animal", 
+        "id": "PACK_ANIMAL_MOD", 
+        "graphic": "10312.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "32", 
+        "label": "Patient Evacuation Coordination", 
+        "id": "PATIENT_EVACUATION_COORDINATION_MOD", 
+        "graphic": "10322.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "33", 
+        "label": "Preventive Maintenance", 
+        "id": "PREVENTIVE_MAINTENANCE_MOD", 
+        "graphic": "10332.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "34", 
+        "label": "Psychological", 
+        "id": "PSYCHOLOGICAL_MOD", 
+        "graphic": "10342.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "35", 
+        "label": "Radio Relay Line of Sight", 
+        "id": "RADIO_RELAY_LOS_MOD", 
+        "graphic": "10352.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "36", 
+        "label": "Railroad", 
+        "id": "RAILROAD_MOD", 
+        "graphic": "10362.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "37", 
+        "label": "Recovery (Unmanned Systems)", 
+        "id": "RECOVERY_UNMANNED_SYSTEMS_MOD", 
+        "graphic": "10372.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "38", 
+        "label": "Recovery (Maintenance)", 
+        "id": "RECOVERY_MAINTENANCE_MOD", 
+        "graphic": "10382.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "39", 
+        "label": "Rescue Coordination Center", 
+        "id": "RESCUE_COORDINATION_CENTER_MOD", 
+        "graphic": "10392.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "40", 
+        "label": "Riverine", 
+        "id": "RIVERINE_MOD", 
+        "graphic": "10402.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "41", 
+        "label": "Single Channel", 
+        "id": "SINGLE_CHANNEL_MOD", 
+        "graphic": "10412.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "42", 
+        "label": "Ski", 
+        "id": "SKI_MOD", 
+        "graphic": "10422.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "43", 
+        "label": "Short Range", 
+        "id": "SHORT_RANGE_MOD", 
+        "graphic": "10432.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "44", 
+        "label": "Strategic", 
+        "id": "STRATEGIC_MOD", 
+        "graphic": "10442.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "45", 
+        "label": "Support", 
+        "id": "SUPPORT_2_MOD", 
+        "graphic": "10452.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "46", 
+        "label": "Tactical", 
+        "id": "TACTICAL_MOD", 
+        "graphic": "10462.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "47", 
+        "label": "Towed", 
+        "id": "TOWED_MOD", 
+        "graphic": "10472.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "48", 
+        "label": "Troop", 
+        "id": "TROOP_MOD", 
+        "graphic": "10482.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "49", 
+        "label": "Vertical or Short Take-Off and Landing (VTOL/VSTOL)", 
+        "id": "VERTICAL_TAKE_OFF_LANDING_VTOL_MOD", 
+        "graphic": "10492.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "50", 
+        "label": "Veterinary", 
+        "id": "VETERINARY_MOD", 
+        "graphic": "10502.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "51", 
+        "label": "Wheeled", 
+        "id": "WHEELED_MOD", 
+        "graphic": "10512.svg", 
+        "category": "Mobility"
+    }, 
+    {
+        "digits": "52", 
+        "label": "High to Low Altitude", 
+        "id": "HIGH_LOW_ALTITUDE_MOD", 
+        "graphic": "10522.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "53", 
+        "label": "Medium to Low Altitude", 
+        "id": "MEDIUM_LOW_ALTITUDE_MOD", 
+        "graphic": "10532.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "54", 
+        "label": "Attack", 
+        "id": "ATTACK_2_MOD", 
+        "graphic": "10542.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "55", 
+        "label": "Refuel", 
+        "id": "REFUEL_MOD", 
+        "graphic": "10552.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "56", 
+        "label": "Utility", 
+        "id": "UTILITY_2_MOD", 
+        "graphic": "10562.svg", 
+        "category": "Capability"
+    }, 
+    {
+        "digits": "57", 
+        "label": "Combat Search and Rescue", 
+        "id": "COMBAT_SEARCH_RESCUE_MOD", 
+        "graphic": "10572.svg", 
+        "category": "Capability"
+    }
+];
+
+export const graphicFolder = {
+    "entities": "Appendices/Land", 
+    "modifierTwos": "Appendices/Land/mod2", 
+    "modifierOnes": "Appendices/Land/mod1"
+};
+

@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "46";
 export const label = "Meteorological - Oceanographic";
@@ -1455,3 +1455,14 @@ export const entities = <Entity[]>[
         ]
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[];
+
+export const sectorTwoModifiers = <Modifier[]>[];
+
+export const graphicFolder = {
+    "entities": "Appendices/METOC/Oceanographic"
+};
+

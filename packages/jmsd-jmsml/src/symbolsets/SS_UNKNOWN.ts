@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "00";
 export const label = "Unknown";
@@ -25,3 +25,12 @@ export const entities = <Entity[]>[
         "entityTypes": []
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[];
+
+export const sectorTwoModifiers = <Modifier[]>[];
+
+export const graphicFolder = {};
+

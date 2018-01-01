@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "40";
 export const label = "Activities";
@@ -1142,3 +1142,147 @@ export const entities = <Entity[]>[
         ]
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Assassination", 
+        "id": "ASSASSINATION_MOD", 
+        "graphic": "40011.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Execution (Wrongful Killing)", 
+        "id": "EXECUTION_WRONGFUL_KILLING_MOD", 
+        "graphic": "40021.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Hijacking/Hijacked", 
+        "id": "HIJACKING_MOD", 
+        "graphic": "40031.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "04", 
+        "label": "House-to-House", 
+        "id": "HOUSE_TO_HOUSE_MOD", 
+        "graphic": "40041.svg", 
+        "category": "Psychological Operations"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Kidnapping", 
+        "id": "KIDNAPPING_MOD", 
+        "graphic": "40051.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Murder", 
+        "id": "MURDER_MOD", 
+        "graphic": "40061.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Piracy", 
+        "id": "PIRACY_MOD", 
+        "graphic": "40071.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Rape", 
+        "id": "RAPE_MOD", 
+        "graphic": "40081.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Written Psychological Operations", 
+        "id": "WRITTEN_PSYCHOLOGICAL_OPERATIONS_MOD", 
+        "graphic": "40091.svg", 
+        "category": "Psychological Operations"
+    }, 
+    {
+        "digits": "10", 
+        "label": "Pirate", 
+        "id": "PIRATE_MOD", 
+        "graphic": "40101.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "11", 
+        "label": "False", 
+        "id": "FALSE_MOD", 
+        "graphic": "40111.svg", 
+        "category": "IED Category"
+    }, 
+    {
+        "digits": "12", 
+        "label": "Find", 
+        "id": "FIND_MOD", 
+        "graphic": "40121.svg", 
+        "category": "IED Category"
+    }, 
+    {
+        "digits": "13", 
+        "label": "Found and Cleared", 
+        "id": "FOUND_AND_CLEARED_MOD", 
+        "graphic": "40131.svg", 
+        "category": "IED Category"
+    }, 
+    {
+        "digits": "14", 
+        "label": "Hoax (Decoy)", 
+        "id": "HOAX_DECOY_MOD", 
+        "graphic": "40141.svg", 
+        "category": "IED Category"
+    }, 
+    {
+        "digits": "15", 
+        "label": "Attempted", 
+        "id": "ATTEMPTED_MOD", 
+        "graphic": "40151.svg", 
+        "category": "Incident Qualifier"
+    }, 
+    {
+        "digits": "16", 
+        "label": "Accident", 
+        "id": "ACCIDENT_MOD", 
+        "graphic": "40161.svg", 
+        "category": "Incident Qualifier"
+    }, 
+    {
+        "digits": "17", 
+        "label": "Incident", 
+        "id": "INCIDENT_MOD", 
+        "graphic": "40171.svg", 
+        "category": "Incident Qualifier"
+    }, 
+    {
+        "digits": "18", 
+        "label": "Theft", 
+        "id": "THEFT_MOD", 
+        "graphic": "40181.svg", 
+        "category": "Crime"
+    }
+];
+
+export const sectorTwoModifiers = <Modifier[]>[];
+
+export const graphicFolder = {
+    "entities": "Appendices/Activities", 
+    "modifierOnes": "Appendices/Activities/mod1"
+};
+

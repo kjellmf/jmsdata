@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "15";
 export const label = "Land Equipment";
@@ -1730,3 +1730,85 @@ export const entities = <Entity[]>[
         "entityTypes": []
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Biological", 
+        "id": "BIOLOGICAL_MOD", 
+        "graphic": "15011.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Chemical", 
+        "id": "CHEMICAL_MOD", 
+        "graphic": "15021.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Early Warning Radar", 
+        "id": "EARLY_WARNING_RADAR_MOD", 
+        "graphic": "15031.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Intrusion", 
+        "id": "INTRUSION_MOD", 
+        "graphic": "15041.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Nuclear", 
+        "id": "NUCLEAR_MOD", 
+        "graphic": "15051.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Radiological", 
+        "id": "RADIOLOGICAL_MOD", 
+        "graphic": "15061.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Upgraded Early Warning Radar", 
+        "id": "UPGRADED_EARLY_WARNING_RADAR_MOD", 
+        "graphic": "15071.svg", 
+        "category": "Sensor Type"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Hijacking", 
+        "id": "HIJACKING_MOD", 
+        "graphic": "15081.svg", 
+        "category": "Crime"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Civilian", 
+        "id": "CIVILIAN_MOD", 
+        "graphic": "15091.svg", 
+        "category": "Organization"
+    }
+];
+
+export const sectorTwoModifiers = <Modifier[]>[];
+
+export const graphicFolder = {
+    "entities": "Appendices/Land", 
+    "modifierTwos": "Appendices/Land/mod2", 
+    "modifierOnes": "Appendices/Land/mod1"
+};
+

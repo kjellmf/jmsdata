@@ -7,7 +7,7 @@ https://github.com/Esri/joint-military-symbology-xml
 Copyright 2014 Esri
 */
 
-import {Entity} from "types";
+import {Entity, EntitySubType, Modifier} from "types";
 
 export const digits = "30";
 export const label = "Sea Surface";
@@ -657,3 +657,303 @@ export const entities = <Entity[]>[
         "entityTypes": []
     }
 ];
+
+export const specialEntitySubTypes = <EntitySubType[]>[];
+
+export const sectorOneModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Own Ship", 
+        "id": "OWN_MOD", 
+        "graphic": "30011.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Antiair Warfare", 
+        "id": "AA_MOD", 
+        "graphic": "30021.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Antisubmarine Warfare", 
+        "id": "ASW_MOD", 
+        "graphic": "30031.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Escort", 
+        "id": "ESCORT_MOD", 
+        "graphic": "30041.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Electronic Warfare", 
+        "id": "EW_MOD", 
+        "graphic": "30051.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Intelligence, Surveillance, Reconnaissance", 
+        "id": "ISR_MOD", 
+        "graphic": "30061.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Mine Countermeasures", 
+        "id": "MCM_MOD", 
+        "graphic": "30071.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Missile Defense", 
+        "id": "MD_MOD", 
+        "graphic": "30081.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Medical", 
+        "id": "MED_MOD", 
+        "graphic": "30091.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "10", 
+        "label": "Mine Warfare", 
+        "id": "MIW_MOD", 
+        "graphic": "30101.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "11", 
+        "label": "Remote Multi-Mission Vehicle (USV-only)", 
+        "id": "RMV_MOD", 
+        "graphic": "30111.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "12", 
+        "label": "Special Operations Forces (SOF)", 
+        "id": "SOF_MOD", 
+        "graphic": "30121.svg", 
+        "category": "Asset Capability"
+    }, 
+    {
+        "digits": "13", 
+        "label": "Surface Warfare", 
+        "id": "SUW_MOD", 
+        "graphic": "30131.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "14", 
+        "label": "Ballistic Missile", 
+        "id": "BALLISTIC_MOD", 
+        "graphic": "30141.svg", 
+        "category": "Weapons Capability"
+    }, 
+    {
+        "digits": "15", 
+        "label": "Guided Missile", 
+        "id": "GUIDED_MOD", 
+        "graphic": "30151.svg", 
+        "category": "Weapons Capability"
+    }, 
+    {
+        "digits": "16", 
+        "label": "Other Guided Missile", 
+        "id": "OTHER_GUIDED_MOD", 
+        "graphic": "30161.svg", 
+        "category": "Weapons Capability"
+    }, 
+    {
+        "digits": "17", 
+        "label": "Torpedo", 
+        "id": "TORPEDO_MOD", 
+        "graphic": "30171.svg", 
+        "category": "Weapons Capability"
+    }, 
+    {
+        "digits": "18", 
+        "label": "Drone-Equipped", 
+        "id": "DRONE_EQUIP_MOD", 
+        "graphic": "30181.svg", 
+        "category": "Asset Capability"
+    }, 
+    {
+        "digits": "19", 
+        "label": "Helicopter-Equipped/VSTOL", 
+        "id": "HELO_EQUIP_MOD", 
+        "graphic": "30191.svg", 
+        "category": "Asset Capability"
+    }, 
+    {
+        "digits": "20", 
+        "label": "Ballistic Missile Defense, Shooter", 
+        "id": "BALLISTIC_DEFENSE_MOD", 
+        "graphic": "30201.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "21", 
+        "label": "Ballistic Missile Defense, Long-Range Surveillance and Track (LRST)", 
+        "id": "LRST_MOD", 
+        "graphic": "30211.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "22", 
+        "label": "Sea-Base X-Band", 
+        "id": "SEA_BASED_X_MOD", 
+        "graphic": "30221.svg", 
+        "category": "Mission Area"
+    }, 
+    {
+        "digits": "23", 
+        "label": "Hijacking/Hijacked", 
+        "id": "HIJACK_MOD", 
+        "graphic": "30231.svg", 
+        "category": "Crime"
+    }
+];
+
+export const sectorTwoModifiers = <Modifier[]>[
+    {
+        "digits": "00", 
+        "label": "Unspecified", 
+        "id": "UNSPECIFIED_2_MOD"
+    }, 
+    {
+        "digits": "01", 
+        "label": "Nuclear Powered", 
+        "id": "NUCLEAR_MOD", 
+        "graphic": "30012.svg", 
+        "category": "Ship Propulsion"
+    }, 
+    {
+        "digits": "02", 
+        "label": "Heavy", 
+        "id": "HEAVY_MOD", 
+        "graphic": "30022.svg", 
+        "category": "Ship Capacity"
+    }, 
+    {
+        "digits": "03", 
+        "label": "Light", 
+        "id": "LIGHT_MOD", 
+        "graphic": "30032.svg", 
+        "category": "Ship Capacity"
+    }, 
+    {
+        "digits": "04", 
+        "label": "Medium", 
+        "id": "MEDIUM_MOD", 
+        "graphic": "30042.svg", 
+        "category": "Ship Capacity"
+    }, 
+    {
+        "digits": "05", 
+        "label": "Dock", 
+        "id": "DOCK_MOD", 
+        "graphic": "30052.svg", 
+        "category": "Cargo Capacity"
+    }, 
+    {
+        "digits": "06", 
+        "label": "Logistics", 
+        "id": "LOGISTICS_MOD", 
+        "graphic": "30062.svg", 
+        "category": "Cargo Capacity"
+    }, 
+    {
+        "digits": "07", 
+        "label": "Tank", 
+        "id": "TANK_MOD", 
+        "graphic": "30072.svg", 
+        "category": "Cargo Capacity"
+    }, 
+    {
+        "digits": "08", 
+        "label": "Vehicle", 
+        "id": "VEHICLE_MOD", 
+        "graphic": "30082.svg", 
+        "category": "Cargo Capacity"
+    }, 
+    {
+        "digits": "09", 
+        "label": "Fast", 
+        "id": "FAST_MOD", 
+        "graphic": "30092.svg", 
+        "category": "Ship Mobility"
+    }, 
+    {
+        "digits": "10", 
+        "label": "Air-Cushioned (US)", 
+        "id": "COMBINE_GEV_MOD", 
+        "graphic": "30102.svg", 
+        "category": "Ship Mobility"
+    }, 
+    {
+        "digits": "11", 
+        "label": "Air-Cushioned (NATO)", 
+        "id": "PANEURO_GEV_MOD", 
+        "graphic": "30112.svg", 
+        "category": "Ship Mobility"
+    }, 
+    {
+        "digits": "12", 
+        "label": "Hydrofoil", 
+        "id": "HYDROFOIL_MOD", 
+        "graphic": "30122.svg", 
+        "category": "Ship Mobility"
+    }, 
+    {
+        "digits": "13", 
+        "label": "Autonomous Control", 
+        "id": "AUTONOMOUS_MOD", 
+        "graphic": "30132.svg", 
+        "limitUseTo": [
+            "CIV_USV"
+        ], 
+        "category": "USV Control"
+    }, 
+    {
+        "digits": "14", 
+        "label": "Remotely Piloted", 
+        "id": "RPV_MOD", 
+        "graphic": "30142.svg", 
+        "limitUseTo": [
+            "CIV_USV"
+        ], 
+        "category": "USV Control"
+    }, 
+    {
+        "digits": "15", 
+        "label": "Expendable", 
+        "id": "EXPENDABLE_MOD", 
+        "graphic": "30152.svg", 
+        "limitUseTo": [
+            "CIV_USV"
+        ], 
+        "category": "USV Control"
+    }
+];
+
+export const graphicFolder = {
+    "entities": "Appendices/SeaSurface", 
+    "modifierTwos": "Appendices/SeaSurface/mod2", 
+    "modifierOnes": "Appendices/SeaSurface/mod1"
+};
+

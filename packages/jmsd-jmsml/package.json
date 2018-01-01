@@ -2,21 +2,32 @@
   "name": "jmsd-jmsml",
   "version": "1.0.0",
   "description": "Joint Military Symbology Markup Language wrapper",
-  "main": "dist/lib/src/index",
-  "typings": "dist/src/index.d.ts",
-  "module": "dist/src/index",
+  "main": "dist/jmsd-jmsml.umd.js",
+  "module": "dist/jmsd-jmsml.es5.js",
+  "typings": "dist/types/jmsd-jmsml.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "npm run compile",
-    "compile": "tsc -p . && tsc --module commonjs --outDir dist/lib -d false",
-    "watch": "tsc -w -p .",
+    "prebuild": "rimraf dist",
+    "build": "tsc && rollup -c rollup.config.ts && rimraf compiled",
+    "start": "tsc -w & rollup -c rollup.config.ts -w",
     "clean": "rm -rf dist",
     "test": "jest"
   },
   "author": "Kjell Magne Fauske <kjellmf@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/jest": "^21.1.10",
+    "@types/jest": "^22.0.0",
+    "@types/node": "^8.5.2",
     "jest": "^22.0.4",
+    "lodash": "^4.17.4",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.53.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
     "ts-jest": "^22.0.0",
     "typescript": "^2.6.2"
   },

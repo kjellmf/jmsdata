@@ -15,8 +15,15 @@
   "author": "Kjell Magne Fauske <kjellmf@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/jest": "^21.1.10",
+    "@types/jest": "^22.0.0",
+    "@types/node": "^8.5.2",
     "jest": "^22.0.4",
+    "lodash": "^4.17.4",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.53.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
     "ts-jest": "^22.0.0",
     "typescript": "^2.6.2"
   },

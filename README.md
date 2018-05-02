@@ -1,3 +1,5 @@
+## Check out the [MILSTD Military symbol standards in JSON](https://github.com/spatialillusions/milstd) project instead!
+
 # Joint Military Symbology Data 
 
 **...work in progress...**
